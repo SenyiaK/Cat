@@ -1,7 +1,6 @@
-public interface play_sound {
-    //Каждый раз, когда я вижу слово static, у меня возникает вопрос: "Зачем он здесь?" Можешь аргументировать его
-    //Присутствие здесь? И да, здесь реализация тоже не нужна, она должна быть в классе Cat
-    static void print() {
-        System.out.print("Скажи мне что-нибудь");
-    };
+public interface PlaySound {
+
+    void PlaySounds();
+
+    void print();
 }

@@ -1,16 +1,26 @@
 public abstract class Animals {
 
-    final String name;
+    public String name;
 
     public Animals(String name) {
         this.name = name;
     }
 
-    //Считаю, что стоит именовать классы названием в единственном числе.
-    //Про такую реализацию метода eat я говорил:)
+    public Animals() {
+
+    }
+
     public void eat() {
         System.out.println("Ом-ном-ном");
     }
 
     abstract void jump();
+
+    public void getName() {
+    }
+
+    public void print() {
+    }
+
+    public abstract void scratch();
 }
