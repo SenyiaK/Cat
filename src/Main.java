@@ -1,3 +1,8 @@
+import src.src.Animals;
+import src.src.Cat;
+import src.src.PlaySound;
+
+
 public class Main {
 
 
@@ -8,24 +13,24 @@ public class Main {
     //Добавь файл gitignore
 //https://github.com/github/gitignore/blob/master/Java.gitignore
 
-    public static void main(String[] args){
+    public static <AbilityToScratch> void main(String[] args){
 
         Cat ourcat = new Cat((String) name[3]);
         ourcat.jump();
         ourcat.scratch();
 
 
-        PlaySound cat1 = new Cat((String) name[1]);
+        PlaySound cat1 = new Cat(name[1]);
 
         cat1.print();
 
-        Animals cat2 = new Cat((String) name[0]);
+        Animals cat2 = new Cat(name[0]);
 
         cat2.getName();
         cat2.print();
 
-        Cat cat3 =  new Cat((String)name[3]);
-        cat3.scratch();
+        AbilityToScratch cat3 = (AbilityToScratch) new Cat(name[3]);
+        ((Cat) cat3).scratch();
         // write your code here
     }
 

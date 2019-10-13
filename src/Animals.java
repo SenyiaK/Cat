@@ -1,3 +1,5 @@
+package src.src;
+
 public abstract class Animals {
 
     public String name;
@@ -14,7 +16,7 @@ public abstract class Animals {
         System.out.println("Ом-ном-ном");
     }
 
-    abstract void jump();
+    protected abstract void jump();
 
     public void getName() {
     }
@@ -23,4 +25,5 @@ public abstract class Animals {
     }
 
     public abstract void scratch();
+
 }

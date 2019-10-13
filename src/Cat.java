@@ -1,4 +1,10 @@
-public class Cat extends Animals implements PlaySound{
+
+package src.src;
+import src.src.Animals;
+import src.src.PlaySound;
+
+
+public class Cat extends Animals implements PlaySound {
 
     public Cat(String name) {
         super(name);
@@ -9,7 +15,7 @@ public class Cat extends Animals implements PlaySound{
     }
 
     @Override
-    void jump() {
+    public void jump() {
         System.out.println("Прыгать");
     }
 
