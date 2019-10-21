@@ -12,7 +12,7 @@ public class Main {
 
     //Добавь файл gitignore
 //https://github.com/github/gitignore/blob/master/Java.gitignore
-
+//зачем AbilityToScratch здесь? После такого у нас не получится собраться.
     public static <AbilityToScratch> void main(String[] args){
 
         Cat ourcat = new Cat((String) name[3]);
@@ -28,12 +28,12 @@ public class Main {
 
         cat2.getName();
         cat2.print();
-
+//Этот тип не должен здесь привестись таким образом, класс может реализовывать несколько интерфейсов.
         AbilityToScratch cat3 = (AbilityToScratch) new Cat(name[3]);
         ((Cat) cat3).scratch();
         // write your code here
     }
-
+//зачем классу Main метод setName?
     public static void setName(Object[] name) {
 
         Main.name = (String[]) name;

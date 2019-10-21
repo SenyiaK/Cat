@@ -1,8 +1,4 @@
-
 package src.src;
-import src.src.Animals;
-import src.src.PlaySound;
-
 
 public class Cat extends Animals implements PlaySound {
 
