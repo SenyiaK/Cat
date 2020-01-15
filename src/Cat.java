@@ -10,6 +10,8 @@ public class Cat extends Animals implements PlaySound, AbilityToScratch {
         super();
     }
 
+
+
     @Override
     public void jump() {
         System.out.println("Прыгать");
@@ -22,7 +24,7 @@ public class Cat extends Animals implements PlaySound, AbilityToScratch {
 
     @Override
     public void PlaySounds() {
-        System.out.print("Скажи что-нибудь");
+        System.out.print("Мяу-мяу");
 
     }
 }
