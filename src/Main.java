@@ -1,3 +1,5 @@
+package src.src;
+//Зачем package src.src; убрала? Вернул.
 import java.util.ArrayList;
 import java.util.List;
 
@@ -6,15 +8,11 @@ import static java.lang.System.out;
 
 
 public class Main {
+//public static String [] name = {"Pers", "Masha", "Fishka", "Barsik"};
 
-
-
-    // public static String [] name = {"Pers", "Masha", "Fishka", "Barsik"};
-
-
-    //Добавь файл gitignore
+//Добавь файл gitignore в нём укажи маски файлов, которые git отслеживать не должен.
 //https://github.com/github/gitignore/blob/master/Java.gitignore
-//зачем AbilityToScratch здесь? После такого у нас не получится собраться.
+
     public static void main(String[] args){
 
        // Cat ourcat = new Cat((String) name[3]);
@@ -49,6 +47,9 @@ public class Main {
         out.println("Animals: "+animals);
 
         for (int i = 0; i < animals.size(); i++) {
+            //Посмотри метод instanceOf, он здесь больше подойдёт, можно будет тогда оставить
+            //один список с кошками и собаками
+            //У тебя и так умолчательная реализация метода содержит System.out.println() пользуйся ей, вызывай методы.
             if (dogs.contains(animals.get(i))) {
                 System.out.println("scratch");
                 System.out.println("Bite");
