@@ -1,17 +1,20 @@
 package src.src;
-
 public class Cat extends Animals implements PlaySound, AbilityToScratch {
 
-    public Cat(String name) {
-        super(name);
+
+   public Cat(String name) {
+
+
+    // this.name = name;
     }
 
     public Cat() {
-        super();
+
     }
 
+
     @Override
-    public void jump() {
+    public  void jump() {
         System.out.println("Прыгать");
     }
 
