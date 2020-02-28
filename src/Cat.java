@@ -3,11 +3,12 @@ package src.src;
 public class Cat extends Animals implements PlaySound, AbilityToScratch {
 
     public Cat(String name) {
-        super(name);
+
     }
 
     public Cat() {
-        super();
+
+
     }
 
     @Override

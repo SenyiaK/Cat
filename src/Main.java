@@ -1,8 +1,10 @@
 package src.src;
 //Зачем package src.src; убрала? Вернул.
+// Поняла свой косяк здесь. Если не указывать, что данный класс относится к src,
+// то при компиляции он не соберется и запустить программу будет не возможно, т.к. этот класс содержит main(String[] args)
 import java.util.ArrayList;
 import java.util.List;
-
+import java.lang.reflect.Method;
 import static java.lang.System.out;
 // import static jdk.nashorn.internal.objects.Global.print;
 
@@ -10,8 +12,6 @@ import static java.lang.System.out;
 public class Main {
 //public static String [] name = {"Pers", "Masha", "Fishka", "Barsik"};
 
-//Добавь файл gitignore в нём укажи маски файлов, которые git отслеживать не должен.
-//https://github.com/github/gitignore/blob/master/Java.gitignore
 
     public static void main(String[] args){
 
@@ -47,10 +47,7 @@ public class Main {
         out.println("Animals: "+animals);
 
         for (int i = 0; i < animals.size(); i++) {
-            //Посмотри метод instanceOf, он здесь больше подойдёт, можно будет тогда оставить
-            //один список с кошками и собаками
-            //У тебя и так умолчательная реализация метода содержит System.out.println() пользуйся ей, вызывай методы.
-            if (dogs.contains(animals.get(i))) {
+               if (dogs.contains(animals.get(i))) {
                 System.out.println("scratch");
                 System.out.println("Bite");
             }
